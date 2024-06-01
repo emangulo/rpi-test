@@ -13,18 +13,15 @@ app.get("/", (req, res) => {
 });
 
 app.get("/oh/:somethign", (req, res) => {
-  console.log(req.params.somethign);
-  res.send();
+  res.send(req.params.somethign);
 });
 
 app.get("/query", (req, res) => {
-  console.log(req.query.cool);
-  res.send();
+  res.send(req.query.cool);
 });
 
 app.post("/posting", (req, res) => {
-  console.log(req.body);
-  res.send();
+  res.send(req.body);
 });
 
 app.listen(port, () => {
